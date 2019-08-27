@@ -1,0 +1,15 @@
+{
+  "packages": ["libs/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventioanCommits": true,
+      "registry": "http://localhost:4873",
+      "access": "public",
+      "npmClient": "yarn",
+      "allowBranch": ["master", "feature/*"]
+    }
+  }
+}

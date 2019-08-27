@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@starter-project-ng-nest/mylib": ["libs/mylib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
