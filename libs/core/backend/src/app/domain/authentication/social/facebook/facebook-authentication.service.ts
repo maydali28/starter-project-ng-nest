@@ -80,7 +80,7 @@ export class FacebookAuthenticationService {
       return { token: result.access_token };
     } catch (error) {
       this.bffLoggerService.error(
-        'Error retrieving Facebook oAuth access token',
+        'error retrieving Facebook oAuth access token',
         error
       );
       throw new AppError(
