@@ -1,0 +1,4 @@
+{
+  "editor.formatOnSave": true,
+  "tslint.configFile": "/home/dali/workspace/starter-project-ng-nest/tslint.json"
+}
