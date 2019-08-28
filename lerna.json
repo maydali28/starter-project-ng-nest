@@ -8,6 +8,7 @@
       "conventioanCommits": true,
       "registry": "http://localhost:4873",
       "access": "public",
+      "message": "chore(release): release",
       "npmClient": "yarn",
       "allowBranch": ["master", "feature/*"]
     }
