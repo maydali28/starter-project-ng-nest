@@ -22,7 +22,8 @@
       ],
       "@starter-project-ng-nest/core/global-contracts": [
         "libs/core/global-contracts/src/index.ts"
-      ]
+      ],
+      "@starter-project-ng-nest/contracts": ["libs/contracts/src/index.ts"]
     }
   }
 }

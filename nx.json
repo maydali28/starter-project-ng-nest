@@ -9,13 +9,18 @@
   },
   "projects": {
     "platform": {
-      "tags": []
+      "tags": ["type:backend", "scope:platform"],
+      "implicitDependencies": ["core-backend", "contracts"]
     },
     "core-backend": {
-      "tags": []
+      "tags": ["type:backend", "scope:core"],
+      "implicitDependencies": ["core-global-contracts"]
     },
     "core-global-contracts": {
-      "tags": []
+      "tags": ["type:data", "scope:core"]
+    },
+    "contracts": {
+      "tags": ["type:data", "scope:shared"]
     }
   }
 }
