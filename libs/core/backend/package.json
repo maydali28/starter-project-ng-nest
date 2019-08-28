@@ -1,0 +1,19 @@
+{
+  "name": "@core/backend",
+  "version": "0.0.0",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maydali28/starter-project-ng-nest"
+  },
+  "author": "dali",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
