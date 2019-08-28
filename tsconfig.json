@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -18,6 +19,6 @@
     "paths": {
       "@starter-project-ng-nest/mylib": ["libs/mylib/src/index.ts"]
     }
-  },
-  "exclude": ["node_modules", "tmp"]
+  }
+  // "exclude": ["node_modules", "tmp"]
 }
