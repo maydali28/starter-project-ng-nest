@@ -5,7 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
-      "conventioanCommits": true,
+      "conventionalCommits": true,
       "registry": "http://localhost:4873",
       "access": "public",
       "message": "chore(release): release",

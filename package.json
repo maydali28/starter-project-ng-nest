@@ -28,7 +28,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "prerelease": "yarn affected:test && yarn affected:lint && yarn affected:build && yarn lerna version --conventional-commits",
+    "prerelease": "yarn affected:test && yarn affected:lint && yarn affected:build && yarn lerna version",
     "release": "lerna publish",
     "lerna": "lerna",
     "commit": "git-cz",
