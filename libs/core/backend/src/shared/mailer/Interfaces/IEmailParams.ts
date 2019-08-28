@@ -1,4 +1,4 @@
 export interface IEmailParams {
-    locals: any;
-    view: string;
+  locals: any;
+  view: string;
 }

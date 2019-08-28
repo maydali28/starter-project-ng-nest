@@ -13,24 +13,26 @@ import { Authentication } from '../model/authentication.model';
 
 @Injectable()
 export class AuthenticationRepo extends BaseService<Authentication> {
-    constructor(
-        readonly loggerService: LoggerSharedService,
-        @InjectModel(Authentication.modelName) model: ModelType<Authentication>,
-        @Inject(CachingProviderTokens.Services.CacheStore) cacheStore: CacheStore,
-        @Inject(AppConfigProviderTokens.Config.App) coreConfig: ICoreConfig,
-        readonly mapperService: MapperService,
-    ) {
-        super({
-            loggerService,
-            model,
-            cacheStore,
-            defaultTTL: coreConfig.caching.entities.user,
-            entityValidator: new ClassValidator(loggerService, Authentication),
-            mapper: mapperService.mapper
-        });
-    }
+  constructor(
+    readonly loggerService: LoggerSharedService,
+    @InjectModel(Authentication.modelName) model: ModelType<Authentication>,
+    @Inject(CachingProviderTokens.Services.CacheStore) cacheStore: CacheStore,
+    @Inject(AppConfigProviderTokens.Config.App) coreConfig: ICoreConfig,
+    readonly mapperService: MapperService
+  ) {
+    super({
+      loggerService,
+      model,
+      cacheStore,
+      defaultTTL: coreConfig.caching.entities.user,
+      entityValidator: new ClassValidator(loggerService, Authentication),
+      mapper: mapperService.mapper
+    });
+  }
 
-    protected generateValidQueryConditionsForCacheClear(entity: Authentication): object[] {
-        return [{ id: entity._id, userId: entity.userId }];
-    }
+  protected generateValidQueryConditionsForCacheClear(
+    entity: Authentication
+  ): object[] {
+    return [{ id: entity._id, userId: entity.userId }];
+  }
 }

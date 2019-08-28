@@ -20,6 +20,6 @@ export const getReqMetadataLite = (req: Request) => {
     ip: req.ip,
     ips: req.ips,
     originalUrl: req.originalUrl,
-    userAgent: req.headers['user-agent'],
+    userAgent: req.headers['user-agent']
   };
 };

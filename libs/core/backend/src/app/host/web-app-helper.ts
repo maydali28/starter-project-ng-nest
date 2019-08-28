@@ -7,7 +7,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 export class WebAppHelper {
   public static async setupCoreApp(
     coreConfig: ICoreConfig,
-    app: INestApplication & NestExpressApplication,
+    app: INestApplication & NestExpressApplication
   ) {
     // RUN SETUP STEPS
 
@@ -29,8 +29,8 @@ export class WebAppHelper {
       swaggerOptions: {
         docExpansion: 'list',
         filter: true,
-        showRequestDuration: true,
-      },
+        showRequestDuration: true
+      }
     });
 
     /*    logger.debug(`AppConfig.migrations.autoRun: ${nestBffConfig.migrations.autoRun}`);

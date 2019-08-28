@@ -1,4 +1,11 @@
-import { CacheInterceptor, MiddlewareConsumer, Module, NestModule, RequestMethod, ValidationPipe } from '@nestjs/common';
+import {
+  CacheInterceptor,
+  MiddlewareConsumer,
+  Module,
+  NestModule,
+  RequestMethod,
+  ValidationPipe
+} from '@nestjs/common';
 import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { HttpAuthModule } from './endpoints/auth/authentication.module';
 import { HttpCoreModule } from './core/core.module';
@@ -17,36 +24,42 @@ import { AttachAuthenticationHttpMiddleware } from './core/middleware/attach-aut
 const AppFilterProvider = {
   // setting up global filter
   provide: APP_FILTER,
-  useClass: HttpExceptionFilter,
+  useClass: HttpExceptionFilter
 };
 
 const AppGuardProvider = {
   // setting up global guard
   provide: APP_GUARD,
-  useClass: AuthorizationGuard,
+  useClass: AuthorizationGuard
 };
 
 const CacheInterceptorProvider = {
   // setting up global caching
   provide: APP_INTERCEPTOR,
-  useClass: CacheInterceptor,
+  useClass: CacheInterceptor
 };
 
 const AppPipeProvider = {
   // setting up global validation and transformation
   provide: APP_PIPE,
-  useFactory: () => new ValidationPipe({ transform: true }),
+  useFactory: () => new ValidationPipe({ transform: true })
 };
 
 @Module({
   imports: [HttpCoreModule, HttpAuthModule],
   controllers: [],
-  providers: [AppFilterProvider, AppPipeProvider, CacheInterceptorProvider, AppGuardProvider],
-  exports: [],
+  providers: [
+    AppFilterProvider,
+    AppPipeProvider,
+    CacheInterceptorProvider,
+    AppGuardProvider
+  ],
+  exports: []
 })
 export class HttpWebAppBaseModule implements NestModule {
-
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(AttachAuthenticationHttpMiddleware).forRoutes({ path: '*', method: RequestMethod.ALL });
+    consumer
+      .apply(AttachAuthenticationHttpMiddleware)
+      .forRoutes({ path: '*', method: RequestMethod.ALL });
   }
 }

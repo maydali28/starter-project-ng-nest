@@ -9,8 +9,26 @@ import { DomainOrganizationModule } from '../../domain/organization/organization
 import { AttachAuthenticationHttpMiddleware } from './middleware/attach-authentication.middleware';
 
 @Module({
-  imports: [ConfigurationModule, DomainAccessPermissionsModule, DomainOrganizationModule, LoggingSharedModule, CachingSharedModule],
-  providers: [AuthorizationGuard, AttachAuthenticationHttpMiddleware, JwtTokenService],
-  exports: [ConfigurationModule, DomainAccessPermissionsModule, DomainOrganizationModule, LoggingSharedModule, CachingSharedModule, AttachAuthenticationHttpMiddleware, JwtTokenService],
+  imports: [
+    ConfigurationModule,
+    DomainAccessPermissionsModule,
+    DomainOrganizationModule,
+    LoggingSharedModule,
+    CachingSharedModule
+  ],
+  providers: [
+    AuthorizationGuard,
+    AttachAuthenticationHttpMiddleware,
+    JwtTokenService
+  ],
+  exports: [
+    ConfigurationModule,
+    DomainAccessPermissionsModule,
+    DomainOrganizationModule,
+    LoggingSharedModule,
+    CachingSharedModule,
+    AttachAuthenticationHttpMiddleware,
+    JwtTokenService
+  ]
 })
-export class HttpCoreModule { }
+export class HttpCoreModule {}

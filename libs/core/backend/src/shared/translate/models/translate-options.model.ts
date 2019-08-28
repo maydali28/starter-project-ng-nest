@@ -1,6 +1,6 @@
-export const TRANSLATE_OPTIONS = "TRANSLATE_OPTIONS";
+export const TRANSLATE_OPTIONS = 'TRANSLATE_OPTIONS';
 
 export interface TranslateOptionsModel {
-    defaultLang: string;
-    feature: boolean;
+  defaultLang: string;
+  feature: boolean;
 }

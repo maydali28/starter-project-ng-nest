@@ -1,3 +1,3 @@
 export interface IOauthAccessToken {
-    readonly token: string;
+  readonly token: string;
 }

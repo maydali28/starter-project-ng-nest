@@ -1,5 +1,5 @@
 export const MongoSharedProviderTokens = {
-    Connections: {
-        Mongoose: 'MongooseConnectionToken',
-    },
+  Connections: {
+    Mongoose: 'MongooseConnectionToken'
+  }
 };

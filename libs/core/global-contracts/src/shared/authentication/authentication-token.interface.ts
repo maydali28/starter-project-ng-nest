@@ -1,3 +1,3 @@
 export interface IAuthenticationToken {
-    readonly token: string;
+  readonly token: string;
 }

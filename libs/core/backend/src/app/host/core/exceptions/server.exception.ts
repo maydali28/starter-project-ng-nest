@@ -1,7 +1,11 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
 
 class ServerHttpError extends HttpException {
-  constructor(response: string | object, status: number, public metaData?: object) {
+  constructor(
+    response: string | object,
+    status: number,
+    public metaData?: object
+  ) {
     super(response, status);
     Error.captureStackTrace(this, ServerHttpError);
   }

@@ -6,9 +6,14 @@ import { HttpCoreModule } from '../../core/core.module';
 import { AuthController } from './authentication.controller';
 
 @Module({
-  imports: [HttpCoreModule, UserAuthModule, DomainAuthenticationModule, DomainAccessPermissionsModule],
+  imports: [
+    HttpCoreModule,
+    UserAuthModule,
+    DomainAuthenticationModule,
+    DomainAccessPermissionsModule
+  ],
   controllers: [AuthController],
   providers: [],
-  exports: [],
+  exports: []
 })
-export class HttpAuthModule { }
+export class HttpAuthModule {}

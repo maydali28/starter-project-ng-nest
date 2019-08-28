@@ -5,5 +5,6 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../../coverage/libs/core/backend'
+  coverageDirectory: '../../../coverage/libs/core/backend',
+  testPathIgnorePatterns: ['libs/core/backend/src/configuration']
 };
