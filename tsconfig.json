@@ -17,8 +17,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@starter-project-ng-nest/mylib": ["libs/mylib/src/index.ts"]
+      "@starter-project-ng-nest/core/backend": [
+        "libs/core/backend/src/index.ts"
+      ],
+      "@starter-project-ng-nest/core/global-contracts": [
+        "libs/core/global-contracts/src/index.ts"
+      ]
     }
   }
-  // "exclude": ["node_modules", "tmp"]
 }

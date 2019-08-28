@@ -8,13 +8,13 @@
     "nx.json": "*"
   },
   "projects": {
-    "mylib": {
+    "platform": {
       "tags": []
     },
-    "myapp-e2e": {
+    "core-backend": {
       "tags": []
     },
-    "myapp": {
+    "core-global-contracts": {
       "tags": []
     }
   }
