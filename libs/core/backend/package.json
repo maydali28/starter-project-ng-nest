@@ -4,7 +4,7 @@
   "version": "0.0.3",
   "ngPackagr": {
     "lib": {
-      "entryFile": "dist/index.ts"
+      "entryFile": "src/index.ts"
     },
     "dest": "@starter-project-ng-nest/core-backend"
   },
