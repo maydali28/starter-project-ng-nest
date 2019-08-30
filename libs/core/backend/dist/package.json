@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/package.schema.json",
+  "name": "@starter-project-ng-nest/core-backend",
+  "version": "0.0.3",
+  "ngPackagr": {
+    "lib": {
+      "entryFile": "src/index.ts"
+    },
+    "dest": "@starter-project-ng-nest/core-backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maydali28/starter-project-ng-nest"
+  },
+  "author": "dali",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "main": "bundles/starter-project-ng-nest-core-backend.umd.js",
+  "module": "fesm5/starter-project-ng-nest-core-backend.js",
+  "es2015": "fesm2015/starter-project-ng-nest-core-backend.js",
+  "esm5": "esm5/starter-project-ng-nest-core-backend.js",
+  "esm2015": "esm2015/starter-project-ng-nest-core-backend.js",
+  "fesm5": "fesm5/starter-project-ng-nest-core-backend.js",
+  "fesm2015": "fesm2015/starter-project-ng-nest-core-backend.js",
+  "typings": "starter-project-ng-nest-core-backend.d.ts",
+  "metadata": "starter-project-ng-nest-core-backend.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
