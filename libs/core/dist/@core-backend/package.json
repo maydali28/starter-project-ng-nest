@@ -1,0 +1,33 @@
+{
+  "name": "core-backend",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maydali28/starter-project-ng-nest"
+  },
+  "main": "bundles/core-backend.umd.js",
+  "files": [
+    "dist"
+  ],
+  "config": {
+    "npmDistDirectory": "dist"
+  },
+  "author": "dali",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "module": "fesm5/core-backend.js",
+  "es2015": "fesm2015/core-backend.js",
+  "esm5": "esm5/core-backend.js",
+  "esm2015": "esm2015/core-backend.js",
+  "fesm5": "fesm5/core-backend.js",
+  "fesm2015": "fesm2015/core-backend.js",
+  "typings": "core-backend.d.ts",
+  "metadata": "core-backend.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
