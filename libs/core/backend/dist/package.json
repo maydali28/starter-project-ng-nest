@@ -5,13 +5,16 @@
     "type": "git",
     "url": "https://github.com/maydali28/starter-project-ng-nest"
   },
+  "main": "bundles/core-backend.umd.js",
+  "files": [
+    "dist"
+  ],
   "author": "dali",
   "license": "MIT",
   "private": false,
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
-  "main": "bundles/core-backend.umd.js",
   "module": "fesm5/core-backend.js",
   "es2015": "fesm2015/core-backend.js",
   "esm5": "esm5/core-backend.js",

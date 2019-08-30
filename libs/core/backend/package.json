@@ -5,6 +5,10 @@
     "type": "git",
     "url": "https://github.com/maydali28/starter-project-ng-nest"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "author": "dali",
   "license": "MIT",
   "private": false,
