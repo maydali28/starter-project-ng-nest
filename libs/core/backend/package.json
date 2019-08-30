@@ -9,6 +9,9 @@
   "files": [
     "dist"
   ],
+  "config": {
+    "npmDistDirectory": "dist"
+  },
   "author": "dali",
   "license": "MIT",
   "private": false,
