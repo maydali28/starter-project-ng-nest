@@ -7,11 +7,8 @@
   },
   "main": "bundles/core-backend.umd.js",
   "files": [
-    "dist"
+    "dist/"
   ],
-  "config": {
-    "npmDistDirectory": "dist"
-  },
   "author": "dali",
   "license": "MIT",
   "private": false,
