@@ -1,4 +1,4 @@
-const Messages = {
+var Messages = {
     UNAUTHORIZED_INVALID_PASSWORD: 'Invalid password',
     UNAUTHORIZED_INVALID_EMAIL: 'The email does not exist',
     UNAUTHORIZED_UNRECOGNIZED_BEARER: 'Unrecognized bearer of the token'
@@ -9,4 +9,4 @@ const Messages = {
  */
 
 export { Messages };
-//# sourceMappingURL=starter-project-ng-nest-core-backend.js.map
+//# sourceMappingURL=core-backend.js.map

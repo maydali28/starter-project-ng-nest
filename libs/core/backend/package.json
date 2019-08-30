@@ -1,5 +1,5 @@
 {
-  "name": "@starter-project-ng-nest/core-backend",
+  "name": "core-backend",
   "version": "0.0.3",
   "repository": {
     "type": "git",

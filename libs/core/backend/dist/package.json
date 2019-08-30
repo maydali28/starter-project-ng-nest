@@ -1,6 +1,5 @@
 {
-  "$schema": "../../../node_modules/ng-packagr/package.schema.json",
-  "name": "@starter-project-ng-nest/core-backend",
+  "name": "core-backend",
   "version": "0.0.3",
   "repository": {
     "type": "git",
@@ -12,15 +11,15 @@
   "publishConfig": {
     "registry": "http://localhost:4873"
   },
-  "main": "bundles/starter-project-ng-nest-core-backend.umd.js",
-  "module": "fesm5/starter-project-ng-nest-core-backend.js",
-  "es2015": "fesm2015/starter-project-ng-nest-core-backend.js",
-  "esm5": "esm5/starter-project-ng-nest-core-backend.js",
-  "esm2015": "esm2015/starter-project-ng-nest-core-backend.js",
-  "fesm5": "fesm5/starter-project-ng-nest-core-backend.js",
-  "fesm2015": "fesm2015/starter-project-ng-nest-core-backend.js",
-  "typings": "starter-project-ng-nest-core-backend.d.ts",
-  "metadata": "starter-project-ng-nest-core-backend.metadata.json",
+  "main": "bundles/core-backend.umd.js",
+  "module": "fesm5/core-backend.js",
+  "es2015": "fesm2015/core-backend.js",
+  "esm5": "esm5/core-backend.js",
+  "esm2015": "esm2015/core-backend.js",
+  "fesm5": "fesm5/core-backend.js",
+  "fesm2015": "fesm2015/core-backend.js",
+  "typings": "core-backend.d.ts",
+  "metadata": "core-backend.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"

@@ -31,7 +31,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "prerelease": "yarn test:libs:affected && yarn build:libs:affected",
+    "prerelease": "yarn test:libs:affected && yarn build:libs:affected && git add --all && yarn commit",
     "release": "lerna publish",
     "lerna": "lerna",
     "commit": "git-cz",

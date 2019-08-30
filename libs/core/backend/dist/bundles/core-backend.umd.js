@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-    typeof define === 'function' && define.amd ? define('@starter-project-ng-nest/core-backend', ['exports'], factory) :
-    (global = global || self, factory((global['starter-project-ng-nest'] = global['starter-project-ng-nest'] || {}, global['starter-project-ng-nest']['core-backend'] = {})));
+    typeof define === 'function' && define.amd ? define('core-backend', ['exports'], factory) :
+    (global = global || self, factory(global['core-backend'] = {}));
 }(this, function (exports) { 'use strict';
 
     var Messages = {
@@ -15,4 +15,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=starter-project-ng-nest-core-backend.umd.js.map
+//# sourceMappingURL=core-backend.umd.js.map
