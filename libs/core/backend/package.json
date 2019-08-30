@@ -2,12 +2,6 @@
   "$schema": "../../../node_modules/ng-packagr/package.schema.json",
   "name": "@starter-project-ng-nest/core-backend",
   "version": "0.0.3",
-  "ngPackagr": {
-    "lib": {
-      "entryFile": "src/index.ts"
-    },
-    "dest": "@starter-project-ng-nest/core-backend"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/maydali28/starter-project-ng-nest"
