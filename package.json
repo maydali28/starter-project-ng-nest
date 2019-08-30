@@ -32,7 +32,7 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "prerelease": "yarn test:libs:affected && yarn build:libs:affected && git add --all && yarn commit",
-    "release": "lerna publish",
+    "release": "lerna publish --ignore-version-check",
     "lerna": "lerna",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006",
